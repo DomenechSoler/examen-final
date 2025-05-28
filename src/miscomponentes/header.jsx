@@ -29,9 +29,8 @@ export default function Header() {
 
   return (
     <Menubar
-      className={`bg-gray-800 text-white shadow-lg fixed top-0 left-0 w-full z-50 transition-transform duration-300 border-0 outline-none flex justify-between ${
-        isVisible ? "translate-y-0" : "-translate-y-full"
-      }`}
+      className={`bg-black text-white shadow-lg fixed top-0 left-0 w-full z-50 transition-transform duration-300 border-0 outline-none flex justify-between ${isVisible ? "translate-y-0" : "-translate-y-full"
+        }`}
       role="menubar"
     >
       {/* Menú principal */}
@@ -69,7 +68,6 @@ export default function Header() {
           </MenubarTrigger>
         </MenubarMenu>
       </div>
-      {/* Login y Sign Up */}
       <div className="flex items-center gap-2 pr-4">
         <MenubarMenu>
           <MenubarTrigger asChild>
@@ -80,7 +78,7 @@ export default function Header() {
           <MenubarTrigger asChild>
             <Link
               href="/signup"
-              className="px-4 py-2 rounded bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-colors"
+              className="px-4 py-2 rounded bg-white hover:bg-gray-200 text-black font-semibold transition-colors"
             >
               Sign Up
             </Link>
