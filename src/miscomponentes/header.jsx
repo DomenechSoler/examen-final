@@ -1,5 +1,6 @@
 "use client";
 
+
 import Link from "next/link";
 import {
   Menubar,
@@ -39,7 +40,9 @@ export default function Header() {
         </MenubarMenu>
         <MenubarMenu>
           <MenubarTrigger asChild>
-            <Link href="/" className="px-4 py-2 hover:text-gray-300">Pandem</Link>
+            <a href="/" className="px-4 py-2 hover:text-gray-300">
+              <img src="/Logo.png" alt="Pandem Logo" className="h-10 w-auto" />
+            </a>
           </MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
